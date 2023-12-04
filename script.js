@@ -1,4 +1,4 @@
-//DOM Elements//
+//DOM Elements //
 const content = document.querySelector('.main-content');
 const newBookBtn = document.querySelector('.new-book');
 const dialog = document.querySelector('dialog');
@@ -30,14 +30,22 @@ radioBtns.forEach(radioBtn => {
 
 
 //Function constructor for book//
-function Book (title, author, pages, read) {
- this.author = author
- this.title = title
- this.pages = pages
- this.read = read
+// function Book (title, author, pages, read) {
+//  this.author = author
+//  this.title = title
+//  this.pages = pages
+//  this.read = read
+// }
+
+class Book {
+    constructor (title,author,pages, read){
+        this.author = author
+        this.title = title
+        this.pages = pages
+        this.read = read
+
+    }
 }
-
-
 
 
 
@@ -195,4 +203,6 @@ function updateDataIndex () {
         
     });
 }   
+
+
 
